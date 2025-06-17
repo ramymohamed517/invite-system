@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <title>الصفحة الرئيسية</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-auth-compat.js"></script>
+
+  <script>
+    const firebaseConfig = {
+      apiKey: "AIzaSyCmv3HQkT0PFg_66im4vSbna4oQu29dTkc",
+      authDomain: "earnovalogin.firebaseapp.com",
+      projectId: "earnovalogin",
+      storageBucket: "earnovalogin.appspot.com",
+      messagingSenderId: "488267724180",
+      appId: "1:488267724180:web:b2a3376a94735bca6e8b81"
+    };
+
+    firebase.initializeApp(firebaseConfig);
+
+    firebase.auth().onAuthStateChanged(function(user) {
+      if (!user) {
+        window.location.href = "login.html";
+      }
+    });
+  </script>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    .header-img {
+      width: 100%;
+      height: auto;
+      max-height: 220px;
+      object-fit: cover;
+      border-bottom-left-radius: 25px;
+      border-bottom-right-radius: 25px;
+      box-shadow: 0 4px 15px rgba(0, 229, 255, 0.2);
+    }
+
+    .main {
+      padding: 20px;
+      flex: 1;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 15px;
+    }
+
+    .card {
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 15px;
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0 0 15px rgba(0, 229, 255, 0.15);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 0 20px rgba(0, 229, 255, 0.3);
+    }
+
+    .card h3 {
+      margin: 0 0 10px;
+      font-size: 16px;
+      color: #00e5ff;
+    }
+
+    .card p {
+      font-size: 13px;
+      color: #eee;
+      margin: 5px 0;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .bottom-nav {
+      display: flex;
+      justify-content: space-around;
+      background-color: rgba(0, 0, 0, 0.7);
+      border-top: 1px solid #00e5ff;
+      padding: 10px 0;
+      position: sticky;
+      bottom: 0;
+      z-index: 1000;
+    }
+
+    .nav-item {
+      text-align: center;
+      color: #00e5ff;
+      font-size: 12px;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .nav-item:hover {
+      color: #00bcd4;
+    }
+
+    .nav-item i {
+      font-size: 20px;
+      display: block;
+      margin-bottom: 3px;
+    }
+
+    @media (max-width: 400px) {
+      .card h3 {
+        font-size: 14px;
+      }
+
+      .card p {
+        font-size: 12px;
+      }
+    }
+  </style>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <img src="Copilot_20250612_150923.png" alt="صورة ترحيبية" class="header-img" />
+
+  <div class="main">
+    <div class="grid">
+      <a href="profit.html">
+        <div class="card">
+          <h3>رصيدك</h3>
+          <p style="color: #a0f4ff; font-size: 13px;">عدد النقاط المكتسبة حتى الآن</p>
+        </div>
+      </a>
+
+      <a href="page.html">
+        <div class="card">
+          <h3>المهام</h3>
+          <p>اكمل المهام اليومية واربح</p>
+        </div>
+      </a>
+
+      <a href="nws.html">
+        <div class="card">
+          <h3>عنّا</h3>
+          <p>معلومات حول تطبيقنا وفريقنا</p>
+        </div>
+      </a>
+
+      <a href="place.html">
+        <div class="card">
+          <h3>الأخبار</h3>
+          <p>آخر التحديثات والعروض</p>
+        </div>
+      </a>
+
+      <div class="card">
+        <h3>دعوة الأصدقاء</h3>
+        <p>شارك التطبيق واربح عند دعوة الأصدقاء</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ✅ شريط التنقل السفلي مع روابط -->
+  <div class="bottom-nav">
+    <a href="index.html" class="nav-item">
+      <i class="fas fa-home"></i>
+      الرئيسية
+    </a>
+    <a href="money.html" class="nav-item">
+      <i class="fas fa-coins"></i>
+      استسمر المال
+    </a>
+    <a href="page.html" class="nav-item">
+      <i class="fas fa-tasks"></i>
+      المهام
+    </a>
+    <a href="account.html" class="nav-item">
+      <i class="fas fa-user"></i>
+      حسابي
+    </a>
+    <a href="siting.html" class="nav-item">
+      <i class="fas fa-cogs"></i>
+      الإعدادات
+    </a>
+    <a href="support.html" class="nav-item">
+      <i class="fas fa-headset"></i>
+      الدعم
+    </a>
+  </div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

@@ -1,0 +1,380 @@
+﻿2024-10-01 20:16:41.880 - ShareX starting.
+2024-10-01 20:16:41.881 - Version: 16.1
+2024-10-01 20:16:41.881 - Build: Release
+2024-10-01 20:16:41.881 - Command line: "C:\Program Files\ShareX\ShareX.exe" -silent
+2024-10-01 20:16:41.881 - Personal path: C:\Users\ahmed\OneDrive\المستندات\ShareX
+2024-10-01 20:16:41.882 - Operating system: Windows 10 Home (64-bit)
+2024-10-01 20:16:41.882 - Running as elevated process: False
+2024-10-01 20:16:41.892 - Flags: SilentRun
+2024-10-01 20:16:41.911 - ApplicationConfig load started: C:\Users\ahmed\OneDrive\المستندات\ShareX\ApplicationConfig.json
+2024-10-01 20:16:49.194 - ApplicationConfig load finished: C:\Users\ahmed\OneDrive\المستندات\ShareX\ApplicationConfig.json
+2024-10-01 20:16:49.209 - UploadersConfig load started: C:\Users\ahmed\OneDrive\المستندات\ShareX\UploadersConfig.json
+2024-10-01 20:16:49.270 - MainForm init started.
+2024-10-01 20:16:49.948 - UploadersConfig load finished: C:\Users\ahmed\OneDrive\المستندات\ShareX\UploadersConfig.json
+2024-10-01 20:16:49.952 - HotkeysConfig load started: C:\Users\ahmed\OneDrive\المستندات\ShareX\HotkeysConfig.json
+2024-10-01 20:16:50.105 - HotkeysConfig load finished: C:\Users\ahmed\OneDrive\المستندات\ShareX\HotkeysConfig.json
+2024-10-01 20:16:50.887 - MainForm init finished.
+2024-10-01 20:16:51.340 - Hotkey registered: Hotkey: Ctrl + Print Screen, Description: Capture region, Job: RectangleRegion
+2024-10-01 20:16:51.342 - Unable to register hotkey: Print Screen
+2024-10-01 20:16:51.342 - Hotkey register failed: Hotkey: Print Screen, Description: Capture entire screen, Job: PrintScreen
+2024-10-01 20:16:51.342 - Unable to register hotkey: Alt + Print Screen
+2024-10-01 20:16:51.342 - Hotkey register failed: Hotkey: Alt + Print Screen, Description: Capture active window, Job: ActiveWindow
+2024-10-01 20:16:51.343 - Hotkey registered: Hotkey: Shift + Print Screen, Description: Start/Stop screen recording, Job: ScreenRecorder
+2024-10-01 20:16:51.343 - Hotkey registered: Hotkey: Ctrl + Shift + Print Screen, Description: Start/Stop screen recording (GIF), Job: ScreenRecorderGIF
+2024-10-01 20:17:02.908 - HotkeyManager started.
+2024-10-01 20:17:02.909 - WatchFolderManager started.
+2024-10-01 20:17:02.926 - Startup time: 21297 ms
+2024-10-01 20:17:02.936 - CommandLine: -silent
+2024-10-01 20:19:52.799 - ShareX closing.
+2024-10-01 20:19:52.806 - ApplicationConfig save started: C:\Users\ahmed\OneDrive\المستندات\ShareX\ApplicationConfig.json
+2024-10-01 20:19:53.208 - ApplicationConfig save successful: C:\Users\ahmed\OneDrive\المستندات\ShareX\ApplicationConfig.json
+2024-10-01 20:19:53.208 - UploadersConfig save started: C:\Users\ahmed\OneDrive\المستندات\ShareX\UploadersConfig.json
+2024-10-01 20:19:53.338 - UploadersConfig save successful: C:\Users\ahmed\OneDrive\المستندات\ShareX\UploadersConfig.json
+2024-10-01 20:19:53.339 - HotkeysConfig save started: C:\Users\ahmed\OneDrive\المستندات\ShareX\HotkeysConfig.json
+2024-10-01 20:21:43.581 - ShareX starting.
+2024-10-01 20:21:43.581 - Version: 16.1
+2024-10-01 20:21:43.582 - Build: Release
+2024-10-01 20:21:43.582 - Command line: "C:\Program Files\ShareX\ShareX.exe" -silent
+2024-10-01 20:21:43.582 - Personal path: C:\Users\ahmed\OneDrive\المستندات\ShareX
+2024-10-01 20:21:43.582 - Operating system: Windows 10 Home (64-bit)
+2024-10-01 20:21:43.583 - Running as elevated process: False
+2024-10-01 20:21:43.593 - Flags: SilentRun
+2024-10-01 20:21:43.613 - ApplicationConfig load started: C:\Users\ahmed\OneDrive\المستندات\ShareX\ApplicationConfig.json
+2024-10-01 20:21:51.794 - ApplicationConfig load finished: C:\Users\ahmed\OneDrive\المستندات\ShareX\ApplicationConfig.json
+2024-10-01 20:21:51.806 - UploadersConfig load started: C:\Users\ahmed\OneDrive\المستندات\ShareX\UploadersConfig.json
+2024-10-01 20:21:51.874 - MainForm init started.
+2024-10-01 20:21:52.316 - UploadersConfig load finished: C:\Users\ahmed\OneDrive\المستندات\ShareX\UploadersConfig.json
+2024-10-01 20:21:52.318 - HotkeysConfig load started: C:\Users\ahmed\OneDrive\المستندات\ShareX\HotkeysConfig.json
+2024-10-01 20:21:52.406 - HotkeysConfig load finished: C:\Users\ahmed\OneDrive\المستندات\ShareX\HotkeysConfig.json
+2024-10-01 20:21:52.957 - MainForm init finished.
+2024-10-01 20:21:53.215 - Hotkey registered: Hotkey: Ctrl + Print Screen, Description: Capture region, Job: RectangleRegion
+2024-10-01 20:21:53.215 - Unable to register hotkey: Print Screen
+2024-10-01 20:21:53.215 - Hotkey register failed: Hotkey: Print Screen, Description: Capture entire screen, Job: PrintScreen
+2024-10-01 20:21:53.215 - Unable to register hotkey: Alt + Print Screen
+2024-10-01 20:21:53.215 - Hotkey register failed: Hotkey: Alt + Print Screen, Description: Capture active window, Job: ActiveWindow
+2024-10-01 20:21:53.215 - Hotkey registered: Hotkey: Shift + Print Screen, Description: Start/Stop screen recording, Job: ScreenRecorder
+2024-10-01 20:21:53.215 - Hotkey registered: Hotkey: Ctrl + Shift + Print Screen, Description: Start/Stop screen recording (GIF), Job: ScreenRecorderGIF
+2024-10-01 20:22:02.681 - HotkeyManager started.
+2024-10-01 20:22:02.683 - WatchFolderManager started.
+2024-10-01 20:22:02.699 - Startup time: 19352 ms
+2024-10-01 20:22:02.707 - CommandLine: -silent
+2024-10-02 10:50:12.662 - ShareX starting.
+2024-10-02 10:50:12.663 - Version: 16.1
+2024-10-02 10:50:12.663 - Build: Release
+2024-10-02 10:50:12.663 - Command line: "C:\Program Files\ShareX\ShareX.exe" -silent
+2024-10-02 10:50:12.663 - Personal path: C:\Users\ahmed\OneDrive\المستندات\ShareX
+2024-10-02 10:50:12.663 - Operating system: Windows 10 Home (64-bit)
+2024-10-02 10:50:12.664 - Running as elevated process: False
+2024-10-02 10:50:12.674 - Flags: SilentRun
+2024-10-02 10:50:12.694 - ApplicationConfig load started: C:\Users\ahmed\OneDrive\المستندات\ShareX\ApplicationConfig.json
+2024-10-02 10:50:22.428 - ApplicationConfig load finished: C:\Users\ahmed\OneDrive\المستندات\ShareX\ApplicationConfig.json
+2024-10-02 10:50:22.464 - UploadersConfig load started: C:\Users\ahmed\OneDrive\المستندات\ShareX\UploadersConfig.json
+2024-10-02 10:50:22.542 - MainForm init started.
+2024-10-02 10:50:22.926 - UploadersConfig load finished: C:\Users\ahmed\OneDrive\المستندات\ShareX\UploadersConfig.json
+2024-10-02 10:50:22.928 - HotkeysConfig load started: C:\Users\ahmed\OneDrive\المستندات\ShareX\HotkeysConfig.json
+2024-10-02 10:50:23.064 - HotkeysConfig load finished: C:\Users\ahmed\OneDrive\المستندات\ShareX\HotkeysConfig.json
+2024-10-02 10:50:23.678 - MainForm init finished.
+2024-10-02 10:50:23.994 - Hotkey registered: Hotkey: Ctrl + Print Screen, Description: Capture region, Job: RectangleRegion
+2024-10-02 10:50:23.994 - Unable to register hotkey: Print Screen
+2024-10-02 10:50:23.994 - Hotkey register failed: Hotkey: Print Screen, Description: Capture entire screen, Job: PrintScreen
+2024-10-02 10:50:23.994 - Unable to register hotkey: Alt + Print Screen
+2024-10-02 10:50:23.994 - Hotkey register failed: Hotkey: Alt + Print Screen, Description: Capture active window, Job: ActiveWindow
+2024-10-02 10:50:23.994 - Hotkey registered: Hotkey: Shift + Print Screen, Description: Start/Stop screen recording, Job: ScreenRecorder
+2024-10-02 10:50:23.994 - Hotkey registered: Hotkey: Ctrl + Shift + Print Screen, Description: Start/Stop screen recording (GIF), Job: ScreenRecorderGIF
+2024-10-02 10:51:13.248 - HotkeyManager started.
+2024-10-02 10:51:13.249 - WatchFolderManager started.
+2024-10-02 10:51:13.268 - Startup time: 60814 ms
+2024-10-02 10:51:13.277 - CommandLine: -silent
+2024-10-02 12:54:21.868 - ShareX starting.
+2024-10-02 12:54:21.869 - Version: 16.1
+2024-10-02 12:54:21.869 - Build: Release
+2024-10-02 12:54:21.869 - Command line: "C:\Program Files\ShareX\ShareX.exe" -silent
+2024-10-02 12:54:21.869 - Personal path: C:\Users\ahmed\OneDrive\المستندات\ShareX
+2024-10-02 12:54:21.869 - Operating system: Windows 10 Home (64-bit)
+2024-10-02 12:54:21.870 - Running as elevated process: False
+2024-10-02 12:54:21.880 - Flags: SilentRun
+2024-10-02 12:54:21.900 - ApplicationConfig load started: C:\Users\ahmed\OneDrive\المستندات\ShareX\ApplicationConfig.json
+2024-10-02 13:08:28.154 - ShareX starting.
+2024-10-02 13:08:28.156 - Version: 16.1
+2024-10-02 13:08:28.156 - Build: Release
+2024-10-02 13:08:28.156 - Command line: "C:\Program Files\ShareX\ShareX.exe" -silent
+2024-10-02 13:08:28.156 - Personal path: C:\Users\ahmed\OneDrive\المستندات\ShareX
+2024-10-02 13:08:28.156 - Operating system: Windows 10 Home (64-bit)
+2024-10-02 13:08:28.157 - Running as elevated process: False
+2024-10-02 13:08:28.169 - Flags: SilentRun
+2024-10-02 13:08:28.189 - ApplicationConfig load started: C:\Users\ahmed\OneDrive\المستندات\ShareX\ApplicationConfig.json
+2024-10-02 13:08:35.181 - ApplicationConfig load finished: C:\Users\ahmed\OneDrive\المستندات\ShareX\ApplicationConfig.json
+2024-10-02 13:08:35.197 - UploadersConfig load started: C:\Users\ahmed\OneDrive\المستندات\ShareX\UploadersConfig.json
+2024-10-02 13:08:35.267 - MainForm init started.
+2024-10-02 13:08:35.595 - UploadersConfig load finished: C:\Users\ahmed\OneDrive\المستندات\ShareX\UploadersConfig.json
+2024-10-02 13:08:35.598 - HotkeysConfig load started: C:\Users\ahmed\OneDrive\المستندات\ShareX\HotkeysConfig.json
+2024-10-02 13:08:35.679 - HotkeysConfig load finished: C:\Users\ahmed\OneDrive\المستندات\ShareX\HotkeysConfig.json
+2024-10-02 13:08:36.226 - MainForm init finished.
+2024-10-02 13:08:36.489 - Hotkey registered: Hotkey: Ctrl + Print Screen, Description: Capture region, Job: RectangleRegion
+2024-10-02 13:08:36.489 - Unable to register hotkey: Print Screen
+2024-10-02 13:08:36.489 - Hotkey register failed: Hotkey: Print Screen, Description: Capture entire screen, Job: PrintScreen
+2024-10-02 13:08:36.489 - Unable to register hotkey: Alt + Print Screen
+2024-10-02 13:08:36.489 - Hotkey register failed: Hotkey: Alt + Print Screen, Description: Capture active window, Job: ActiveWindow
+2024-10-02 13:08:36.489 - Hotkey registered: Hotkey: Shift + Print Screen, Description: Start/Stop screen recording, Job: ScreenRecorder
+2024-10-02 13:08:36.489 - Hotkey registered: Hotkey: Ctrl + Shift + Print Screen, Description: Start/Stop screen recording (GIF), Job: ScreenRecorderGIF
+2024-10-02 13:08:51.040 - HotkeyManager started.
+2024-10-02 13:08:51.041 - WatchFolderManager started.
+2024-10-02 13:08:51.053 - Startup time: 22929 ms
+2024-10-02 13:08:51.060 - CommandLine: -silent
+2024-10-02 15:04:06.793 - ShareX closing.
+2024-10-02 15:04:06.799 - ApplicationConfig save started: C:\Users\ahmed\OneDrive\المستندات\ShareX\ApplicationConfig.json
+2024-10-02 15:04:07.337 - ApplicationConfig save successful: C:\Users\ahmed\OneDrive\المستندات\ShareX\ApplicationConfig.json
+2024-10-02 15:04:07.337 - UploadersConfig save started: C:\Users\ahmed\OneDrive\المستندات\ShareX\UploadersConfig.json
+2024-10-02 15:04:07.474 - UploadersConfig save successful: C:\Users\ahmed\OneDrive\المستندات\ShareX\UploadersConfig.json
+2024-10-02 15:04:07.475 - HotkeysConfig save started: C:\Users\ahmed\OneDrive\المستندات\ShareX\HotkeysConfig.json
+2024-10-02 15:06:01.727 - ShareX starting.
+2024-10-02 15:06:01.728 - Version: 16.1
+2024-10-02 15:06:01.728 - Build: Release
+2024-10-02 15:06:01.728 - Command line: "C:\Program Files\ShareX\ShareX.exe" -silent
+2024-10-02 15:06:01.728 - Personal path: C:\Users\ahmed\OneDrive\المستندات\ShareX
+2024-10-02 15:06:01.728 - Operating system: Windows 10 Home (64-bit)
+2024-10-02 15:06:01.729 - Running as elevated process: False
+2024-10-02 15:06:01.740 - Flags: SilentRun
+2024-10-02 15:06:01.759 - ApplicationConfig load started: C:\Users\ahmed\OneDrive\المستندات\ShareX\ApplicationConfig.json
+2024-10-02 15:06:10.442 - ApplicationConfig load finished: C:\Users\ahmed\OneDrive\المستندات\ShareX\ApplicationConfig.json
+2024-10-02 15:06:10.460 - UploadersConfig load started: C:\Users\ahmed\OneDrive\المستندات\ShareX\UploadersConfig.json
+2024-10-02 15:06:10.534 - MainForm init started.
+2024-10-02 15:06:11.282 - UploadersConfig load finished: C:\Users\ahmed\OneDrive\المستندات\ShareX\UploadersConfig.json
+2024-10-02 15:06:11.285 - HotkeysConfig load started: C:\Users\ahmed\OneDrive\المستندات\ShareX\HotkeysConfig.json
+2024-10-02 15:06:11.848 - HotkeysConfig load finished: C:\Users\ahmed\OneDrive\المستندات\ShareX\HotkeysConfig.json
+2024-10-02 15:06:12.845 - MainForm init finished.
+2024-10-02 15:06:13.134 - Hotkey registered: Hotkey: Ctrl + Print Screen, Description: Capture region, Job: RectangleRegion
+2024-10-02 15:06:13.134 - Unable to register hotkey: Print Screen
+2024-10-02 15:06:13.134 - Hotkey register failed: Hotkey: Print Screen, Description: Capture entire screen, Job: PrintScreen
+2024-10-02 15:06:13.134 - Unable to register hotkey: Alt + Print Screen
+2024-10-02 15:06:13.134 - Hotkey register failed: Hotkey: Alt + Print Screen, Description: Capture active window, Job: ActiveWindow
+2024-10-02 15:06:13.134 - Hotkey registered: Hotkey: Shift + Print Screen, Description: Start/Stop screen recording, Job: ScreenRecorder
+2024-10-02 15:06:13.134 - Hotkey registered: Hotkey: Ctrl + Shift + Print Screen, Description: Start/Stop screen recording (GIF), Job: ScreenRecorderGIF
+2024-10-02 17:20:15.183 - HotkeyManager started.
+2024-10-02 17:20:15.185 - WatchFolderManager started.
+2024-10-02 17:20:15.203 - Startup time: 8053782 ms
+2024-10-02 17:20:15.211 - CommandLine: -silent
+2024-10-02 17:20:17.996 - ShareX closing.
+2024-10-02 17:20:18.000 - ApplicationConfig save started: C:\Users\ahmed\OneDrive\المستندات\ShareX\ApplicationConfig.json
+2024-10-02 17:20:18.401 - ApplicationConfig save successful: C:\Users\ahmed\OneDrive\المستندات\ShareX\ApplicationConfig.json
+2024-10-02 17:20:18.401 - UploadersConfig save started: C:\Users\ahmed\OneDrive\المستندات\ShareX\UploadersConfig.json
+2024-10-02 17:20:18.497 - UploadersConfig save successful: C:\Users\ahmed\OneDrive\المستندات\ShareX\UploadersConfig.json
+2024-10-02 17:20:18.498 - HotkeysConfig save started: C:\Users\ahmed\OneDrive\المستندات\ShareX\HotkeysConfig.json
+2024-10-02 19:54:00.585 - ShareX starting.
+2024-10-02 19:54:00.586 - Version: 16.1
+2024-10-02 19:54:00.586 - Build: Release
+2024-10-02 19:54:00.586 - Command line: "C:\Program Files\ShareX\ShareX.exe" -silent
+2024-10-02 19:54:00.586 - Personal path: C:\Users\ahmed\OneDrive\المستندات\ShareX
+2024-10-02 19:54:00.586 - Operating system: Windows 10 Home (64-bit)
+2024-10-02 19:54:00.587 - Running as elevated process: False
+2024-10-02 19:54:00.596 - Flags: SilentRun
+2024-10-02 19:54:00.615 - ApplicationConfig load started: C:\Users\ahmed\OneDrive\المستندات\ShareX\ApplicationConfig.json
+2024-10-02 19:54:05.931 - ApplicationConfig load finished: C:\Users\ahmed\OneDrive\المستندات\ShareX\ApplicationConfig.json
+2024-10-02 19:54:05.939 - UploadersConfig load started: C:\Users\ahmed\OneDrive\المستندات\ShareX\UploadersConfig.json
+2024-10-02 19:54:06.017 - MainForm init started.
+2024-10-02 19:54:06.439 - UploadersConfig load finished: C:\Users\ahmed\OneDrive\المستندات\ShareX\UploadersConfig.json
+2024-10-02 19:54:06.443 - HotkeysConfig load started: C:\Users\ahmed\OneDrive\المستندات\ShareX\HotkeysConfig.json
+2024-10-02 19:54:06.526 - HotkeysConfig load finished: C:\Users\ahmed\OneDrive\المستندات\ShareX\HotkeysConfig.json
+2024-10-02 19:54:08.222 - MainForm init finished.
+2024-10-02 19:54:08.600 - Hotkey registered: Hotkey: Ctrl + Print Screen, Description: Capture region, Job: RectangleRegion
+2024-10-02 19:54:08.600 - Unable to register hotkey: Print Screen
+2024-10-02 19:54:08.600 - Hotkey register failed: Hotkey: Print Screen, Description: Capture entire screen, Job: PrintScreen
+2024-10-02 19:54:08.601 - Unable to register hotkey: Alt + Print Screen
+2024-10-02 19:54:08.601 - Hotkey register failed: Hotkey: Alt + Print Screen, Description: Capture active window, Job: ActiveWindow
+2024-10-02 19:54:08.601 - Hotkey registered: Hotkey: Shift + Print Screen, Description: Start/Stop screen recording, Job: ScreenRecorder
+2024-10-02 19:54:08.601 - Hotkey registered: Hotkey: Ctrl + Shift + Print Screen, Description: Start/Stop screen recording (GIF), Job: ScreenRecorderGIF
+2024-10-02 19:57:57.186 - HotkeyManager started.
+2024-10-02 19:57:57.188 - WatchFolderManager started.
+2024-10-02 19:57:57.205 - Startup time: 236845 ms
+2024-10-02 19:57:57.213 - CommandLine: -silent
+2024-10-03 18:24:29.909 - ShareX starting.
+2024-10-03 18:24:29.910 - Version: 16.1
+2024-10-03 18:24:29.910 - Build: Release
+2024-10-03 18:24:29.910 - Command line: "C:\Program Files\ShareX\ShareX.exe" -silent
+2024-10-03 18:24:29.910 - Personal path: C:\Users\ahmed\OneDrive\المستندات\ShareX
+2024-10-03 18:24:29.911 - Operating system: Windows 10 Home (64-bit)
+2024-10-03 18:24:29.912 - Running as elevated process: False
+2024-10-03 18:24:29.924 - Flags: SilentRun
+2024-10-03 18:24:29.944 - ApplicationConfig load started: C:\Users\ahmed\OneDrive\المستندات\ShareX\ApplicationConfig.json
+2024-10-03 18:24:37.633 - ApplicationConfig load finished: C:\Users\ahmed\OneDrive\المستندات\ShareX\ApplicationConfig.json
+2024-10-03 18:24:37.646 - UploadersConfig load started: C:\Users\ahmed\OneDrive\المستندات\ShareX\UploadersConfig.json
+2024-10-03 18:24:37.759 - MainForm init started.
+2024-10-03 18:24:38.225 - UploadersConfig load finished: C:\Users\ahmed\OneDrive\المستندات\ShareX\UploadersConfig.json
+2024-10-03 18:24:38.228 - HotkeysConfig load started: C:\Users\ahmed\OneDrive\المستندات\ShareX\HotkeysConfig.json
+2024-10-03 18:24:38.410 - HotkeysConfig load finished: C:\Users\ahmed\OneDrive\المستندات\ShareX\HotkeysConfig.json
+2024-10-03 18:24:39.517 - MainForm init finished.
+2024-10-03 18:24:39.968 - Hotkey registered: Hotkey: Ctrl + Print Screen, Description: Capture region, Job: RectangleRegion
+2024-10-03 18:24:39.968 - Unable to register hotkey: Print Screen
+2024-10-03 18:24:39.968 - Hotkey register failed: Hotkey: Print Screen, Description: Capture entire screen, Job: PrintScreen
+2024-10-03 18:24:39.968 - Unable to register hotkey: Alt + Print Screen
+2024-10-03 18:24:39.968 - Hotkey register failed: Hotkey: Alt + Print Screen, Description: Capture active window, Job: ActiveWindow
+2024-10-03 18:24:39.968 - Hotkey registered: Hotkey: Shift + Print Screen, Description: Start/Stop screen recording, Job: ScreenRecorder
+2024-10-03 18:24:39.968 - Hotkey registered: Hotkey: Ctrl + Shift + Print Screen, Description: Start/Stop screen recording (GIF), Job: ScreenRecorderGIF
+2024-10-03 18:33:41.504 - HotkeyManager started.
+2024-10-03 18:33:41.506 - WatchFolderManager started.
+2024-10-03 18:33:41.523 - Startup time: 551839 ms
+2024-10-03 18:33:41.531 - CommandLine: -silent
+2024-10-03 20:14:44.494 - Arguments received: ""
+2024-10-03 20:15:14.065 - Task in queue. Job: Job, Type: Image, Host: Imgur
+2024-10-03 20:15:14.209 - Task status: Preparing
+2024-10-03 20:15:14.364 - Image copied to clipboard.
+2024-10-03 20:15:14.527 - Image saved to file: C:\Users\ahmed\OneDrive\المستندات\ShareX\Screenshots\2024-10\dIOhh9AIxz.jpg
+2024-10-03 20:15:16.530 - Task completed. File name: dIOhh9AIxz.jpg, Duration: 2317 ms
+2024-10-03 20:15:20.205 - Task in queue. Job: FileUpload, Type: Image, Host: Imgur
+2024-10-03 20:15:20.256 - Task status: Working
+2024-10-03 20:15:20.314 - Upload started. File name: dIOhh9AIxz.jpg, File path: C:\Users\ahmed\OneDrive\المستندات\ShareX\Screenshots\2024-10\dIOhh9AIxz.jpg
+2024-10-03 20:15:24.168 - Upload completed. URL: https://i.imgur.com/YfTtsmA.jpeg, Duration: 3839 ms
+2024-10-03 20:15:24.173 - Task completed. File name: dIOhh9AIxz.jpg, Duration: 3917 ms
+2024-10-03 20:15:37.515 - UploadersConfig save started: C:\Users\ahmed\OneDrive\المستندات\ShareX\UploadersConfig.json
+2024-10-03 20:15:37.515 - ApplicationConfig save started: C:\Users\ahmed\OneDrive\المستندات\ShareX\ApplicationConfig.json
+2024-10-03 20:15:37.520 - HotkeysConfig save started: C:\Users\ahmed\OneDrive\المستندات\ShareX\HotkeysConfig.json
+2024-10-03 20:15:37.592 - HotkeysConfig save successful: C:\Users\ahmed\OneDrive\المستندات\ShareX\HotkeysConfig.json
+2024-10-03 20:15:37.658 - UploadersConfig save successful: C:\Users\ahmed\OneDrive\المستندات\ShareX\UploadersConfig.json
+2024-10-03 20:15:37.780 - ApplicationConfig save successful: C:\Users\ahmed\OneDrive\المستندات\ShareX\ApplicationConfig.json
+2024-10-03 21:33:06.866 - ShareX closing.
+2024-10-03 21:33:06.873 - ApplicationConfig save started: C:\Users\ahmed\OneDrive\المستندات\ShareX\ApplicationConfig.json
+2024-10-03 21:33:07.160 - ApplicationConfig save successful: C:\Users\ahmed\OneDrive\المستندات\ShareX\ApplicationConfig.json
+2024-10-03 21:33:07.160 - UploadersConfig save started: C:\Users\ahmed\OneDrive\المستندات\ShareX\UploadersConfig.json
+2024-10-03 21:33:07.274 - UploadersConfig save successful: C:\Users\ahmed\OneDrive\المستندات\ShareX\UploadersConfig.json
+2024-10-03 21:33:07.274 - HotkeysConfig save started: C:\Users\ahmed\OneDrive\المستندات\ShareX\HotkeysConfig.json
+2024-10-03 22:03:01.207 - ShareX starting.
+2024-10-03 22:03:01.213 - Version: 16.1
+2024-10-03 22:03:01.213 - Build: Release
+2024-10-03 22:03:01.213 - Command line: "C:\Program Files\ShareX\ShareX.exe" -silent
+2024-10-03 22:03:01.213 - Personal path: C:\Users\ahmed\OneDrive\المستندات\ShareX
+2024-10-03 22:03:01.214 - Operating system: Windows 10 Home (64-bit)
+2024-10-03 22:03:01.220 - Running as elevated process: False
+2024-10-03 22:03:01.246 - Flags: SilentRun
+2024-10-03 22:03:01.323 - ApplicationConfig load started: C:\Users\ahmed\OneDrive\المستندات\ShareX\ApplicationConfig.json
+2024-10-03 22:03:05.150 - ApplicationConfig load finished: C:\Users\ahmed\OneDrive\المستندات\ShareX\ApplicationConfig.json
+2024-10-03 22:03:05.162 - UploadersConfig load started: C:\Users\ahmed\OneDrive\المستندات\ShareX\UploadersConfig.json
+2024-10-03 22:03:05.563 - MainForm init started.
+2024-10-03 22:03:05.967 - UploadersConfig load finished: C:\Users\ahmed\OneDrive\المستندات\ShareX\UploadersConfig.json
+2024-10-03 22:03:05.969 - HotkeysConfig load started: C:\Users\ahmed\OneDrive\المستندات\ShareX\HotkeysConfig.json
+2024-10-03 22:03:06.037 - HotkeysConfig load finished: C:\Users\ahmed\OneDrive\المستندات\ShareX\HotkeysConfig.json
+2024-10-03 22:03:07.548 - MainForm init finished.
+2024-10-03 22:03:07.778 - Hotkey registered: Hotkey: Ctrl + Print Screen, Description: Capture region, Job: RectangleRegion
+2024-10-03 22:03:07.778 - Unable to register hotkey: Print Screen
+2024-10-03 22:03:07.778 - Hotkey register failed: Hotkey: Print Screen, Description: Capture entire screen, Job: PrintScreen
+2024-10-03 22:03:07.778 - Unable to register hotkey: Alt + Print Screen
+2024-10-03 22:03:07.778 - Hotkey register failed: Hotkey: Alt + Print Screen, Description: Capture active window, Job: ActiveWindow
+2024-10-03 22:03:07.778 - Hotkey registered: Hotkey: Shift + Print Screen, Description: Start/Stop screen recording, Job: ScreenRecorder
+2024-10-03 22:03:07.778 - Hotkey registered: Hotkey: Ctrl + Shift + Print Screen, Description: Start/Stop screen recording (GIF), Job: ScreenRecorderGIF
+2024-10-03 22:03:13.512 - HotkeyManager started.
+2024-10-03 22:03:13.514 - WatchFolderManager started.
+2024-10-03 22:03:13.525 - Startup time: 13016 ms
+2024-10-03 22:03:13.532 - CommandLine: -silent
+2024-10-04 19:21:55.191 - ShareX starting.
+2024-10-04 19:21:55.196 - Version: 16.1
+2024-10-04 19:21:55.196 - Build: Release
+2024-10-04 19:21:55.196 - Command line: "C:\Program Files\ShareX\ShareX.exe" -silent
+2024-10-04 19:21:55.196 - Personal path: C:\Users\ahmed\OneDrive\المستندات\ShareX
+2024-10-04 19:21:55.196 - Operating system: Windows 10 Home (64-bit)
+2024-10-04 19:21:55.201 - Running as elevated process: False
+2024-10-04 19:21:55.226 - Flags: SilentRun
+2024-10-04 19:21:55.287 - ApplicationConfig load started: C:\Users\ahmed\OneDrive\المستندات\ShareX\ApplicationConfig.json
+2024-10-04 19:22:05.638 - ApplicationConfig load finished: C:\Users\ahmed\OneDrive\المستندات\ShareX\ApplicationConfig.json
+2024-10-04 19:22:05.653 - UploadersConfig load started: C:\Users\ahmed\OneDrive\المستندات\ShareX\UploadersConfig.json
+2024-10-04 19:22:05.716 - MainForm init started.
+2024-10-04 19:22:06.088 - UploadersConfig load finished: C:\Users\ahmed\OneDrive\المستندات\ShareX\UploadersConfig.json
+2024-10-04 19:22:06.090 - HotkeysConfig load started: C:\Users\ahmed\OneDrive\المستندات\ShareX\HotkeysConfig.json
+2024-10-04 19:22:06.173 - HotkeysConfig load finished: C:\Users\ahmed\OneDrive\المستندات\ShareX\HotkeysConfig.json
+2024-10-04 19:22:08.494 - MainForm init finished.
+2024-10-04 19:22:09.255 - Hotkey registered: Hotkey: Ctrl + Print Screen, Description: Capture region, Job: RectangleRegion
+2024-10-04 19:22:09.256 - Unable to register hotkey: Print Screen
+2024-10-04 19:22:09.256 - Hotkey register failed: Hotkey: Print Screen, Description: Capture entire screen, Job: PrintScreen
+2024-10-04 19:22:09.256 - Unable to register hotkey: Alt + Print Screen
+2024-10-04 19:22:09.256 - Hotkey register failed: Hotkey: Alt + Print Screen, Description: Capture active window, Job: ActiveWindow
+2024-10-04 19:22:09.256 - Hotkey registered: Hotkey: Shift + Print Screen, Description: Start/Stop screen recording, Job: ScreenRecorder
+2024-10-04 19:22:09.256 - Hotkey registered: Hotkey: Ctrl + Shift + Print Screen, Description: Start/Stop screen recording (GIF), Job: ScreenRecorderGIF
+2024-10-04 19:22:22.604 - HotkeyManager started.
+2024-10-04 19:22:22.606 - WatchFolderManager started.
+2024-10-04 19:22:22.933 - Startup time: 27992 ms
+2024-10-04 19:22:22.941 - CommandLine: -silent
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     2024-10-05 11:37:44.893 - ShareX starting.
+2024-10-05 11:37:44.894 - Version: 16.1
+2024-10-05 11:37:44.894 - Build: Release
+2024-10-05 11:37:44.894 - Command line: "C:\Program Files\ShareX\ShareX.exe" -silent
+2024-10-05 11:37:44.894 - Personal path: C:\Users\ahmed\OneDrive\المستندات\ShareX
+2024-10-05 11:37:44.895 - Operating system: Windows 10 Home (64-bit)
+2024-10-05 11:37:44.895 - Running as elevated process: False
+2024-10-05 11:37:44.905 - Flags: SilentRun
+2024-10-05 11:37:44.923 - ApplicationConfig load started: C:\Users\ahmed\OneDrive\المستندات\ShareX\ApplicationConfig.json
+2024-10-05 11:37:56.025 - ApplicationConfig load finished: C:\Users\ahmed\OneDrive\المستندات\ShareX\ApplicationConfig.json
+2024-10-05 11:37:56.045 - UploadersConfig load started: C:\Users\ahmed\OneDrive\المستندات\ShareX\UploadersConfig.json
+2024-10-05 11:37:56.151 - MainForm init started.
+2024-10-05 11:37:56.526 - UploadersConfig load finished: C:\Users\ahmed\OneDrive\المستندات\ShareX\UploadersConfig.json
+2024-10-05 11:37:56.528 - HotkeysConfig load started: C:\Users\ahmed\OneDrive\المستندات\ShareX\HotkeysConfig.json
+2024-10-05 11:37:56.698 - HotkeysConfig load finished: C:\Users\ahmed\OneDrive\المستندات\ShareX\HotkeysConfig.json
+2024-10-05 11:37:57.138 - MainForm init finished.
+2024-10-05 11:37:57.387 - Hotkey registered: Hotkey: Ctrl + Print Screen, Description: Capture region, Job: RectangleRegion
+2024-10-05 11:37:57.387 - Unable to register hotkey: Print Screen
+2024-10-05 11:37:57.387 - Hotkey register failed: Hotkey: Print Screen, Description: Capture entire screen, Job: PrintScreen
+2024-10-05 11:37:57.387 - Unable to register hotkey: Alt + Print Screen
+2024-10-05 11:37:57.387 - Hotkey register failed: Hotkey: Alt + Print Screen, Description: Capture active window, Job: ActiveWindow
+2024-10-05 11:37:57.388 - Hotkey registered: Hotkey: Shift + Print Screen, Description: Start/Stop screen recording, Job: ScreenRecorder
+2024-10-05 11:37:57.388 - Hotkey registered: Hotkey: Ctrl + Shift + Print Screen, Description: Start/Stop screen recording (GIF), Job: ScreenRecorderGIF
+2024-10-05 11:38:24.254 - HotkeyManager started.
+2024-10-05 11:38:24.256 - WatchFolderManager started.
+2024-10-05 11:38:24.268 - Startup time: 39574 ms
+2024-10-05 11:38:24.275 - CommandLine: -silent
+2024-10-05 13:01:35.306 - ShareX starting.
+2024-10-05 13:01:35.306 - Version: 16.1
+2024-10-05 13:01:35.307 - Build: Release
+2024-10-05 13:01:35.307 - Command line: "C:\Program Files\ShareX\ShareX.exe" -silent
+2024-10-05 13:01:35.307 - Personal path: C:\Users\ahmed\OneDrive\المستندات\ShareX
+2024-10-05 13:01:35.307 - Operating system: Windows 10 Home (64-bit)
+2024-10-05 13:01:35.308 - Running as elevated process: False
+2024-10-05 13:01:35.319 - Flags: SilentRun
+2024-10-05 13:01:35.338 - ApplicationConfig load started: C:\Users\ahmed\OneDrive\المستندات\ShareX\ApplicationConfig.json
+2024-10-05 13:01:42.547 - ApplicationConfig load finished: C:\Users\ahmed\OneDrive\المستندات\ShareX\ApplicationConfig.json
+2024-10-05 13:01:42.581 - UploadersConfig load started: C:\Users\ahmed\OneDrive\المستندات\ShareX\UploadersConfig.json
+2024-10-05 13:01:42.710 - MainForm init started.
+2024-10-05 13:01:43.080 - UploadersConfig load finished: C:\Users\ahmed\OneDrive\المستندات\ShareX\UploadersConfig.json
+2024-10-05 13:01:43.081 - HotkeysConfig load started: C:\Users\ahmed\OneDrive\المستندات\ShareX\HotkeysConfig.json
+2024-10-05 13:01:43.224 - HotkeysConfig load finished: C:\Users\ahmed\OneDrive\المستندات\ShareX\HotkeysConfig.json
+2024-10-05 13:01:43.742 - MainForm init finished.
+2024-10-05 13:01:44.095 - Hotkey registered: Hotkey: Ctrl + Print Screen, Description: Capture region, Job: RectangleRegion
+2024-10-05 13:01:44.095 - Unable to register hotkey: Print Screen
+2024-10-05 13:01:44.095 - Hotkey register failed: Hotkey: Print Screen, Description: Capture entire screen, Job: PrintScreen
+2024-10-05 13:01:44.095 - Unable to register hotkey: Alt + Print Screen
+2024-10-05 13:01:44.095 - Hotkey register failed: Hotkey: Alt + Print Screen, Description: Capture active window, Job: ActiveWindow
+2024-10-05 13:01:44.095 - Hotkey registered: Hotkey: Shift + Print Screen, Description: Start/Stop screen recording, Job: ScreenRecorder
+2024-10-05 13:01:44.095 - Hotkey registered: Hotkey: Ctrl + Shift + Print Screen, Description: Start/Stop screen recording (GIF), Job: ScreenRecorderGIF
+2024-10-05 13:02:18.799 - HotkeyManager started.
+2024-10-05 13:02:18.801 - WatchFolderManager started.
+2024-10-05 13:02:18.819 - Startup time: 43734 ms
+2024-10-05 13:02:18.827 - CommandLine: -silent
+2024-10-05 14:15:24.550 - ShareX starting.
+2024-10-05 14:15:24.551 - Version: 16.1
+2024-10-05 14:15:24.551 - Build: Release
+2024-10-05 14:15:24.552 - Command line: "C:\Program Files\ShareX\ShareX.exe" -silent
+2024-10-05 14:15:24.552 - Personal path: C:\Users\ahmed\OneDrive\المستندات\ShareX
+2024-10-05 14:15:24.552 - Operating system: Windows 10 Home (64-bit)
+2024-10-05 14:15:24.553 - Running as elevated process: False
+2024-10-05 14:15:24.567 - Flags: SilentRun
+2024-10-05 14:15:24.590 - ApplicationConfig load started: C:\Users\ahmed\OneDrive\المستندات\ShareX\ApplicationConfig.json
+2024-10-05 14:15:37.490 - ApplicationConfig load finished: C:\Users\ahmed\OneDrive\المستندات\ShareX\ApplicationConfig.json
+2024-10-05 14:15:37.565 - UploadersConfig load started: C:\Users\ahmed\OneDrive\المستندات\ShareX\UploadersConfig.json
+2024-10-05 14:15:37.782 - MainForm init started.
+2024-10-05 14:15:38.100 - UploadersConfig load finished: C:\Users\ahmed\OneDrive\المستندات\ShareX\UploadersConfig.json
+2024-10-05 14:15:38.102 - HotkeysConfig load started: C:\Users\ahmed\OneDrive\المستندات\ShareX\HotkeysConfig.json
+2024-10-05 14:15:38.180 - HotkeysConfig load finished: C:\Users\ahmed\OneDrive\المستندات\ShareX\HotkeysConfig.json
+2024-10-05 14:15:38.646 - MainForm init finished.
+2024-10-05 14:15:38.905 - Hotkey registered: Hotkey: Ctrl + Print Screen, Description: Capture region, Job: RectangleRegion
+2024-10-05 14:15:38.905 - Unable to register hotkey: Print Screen
+2024-10-05 14:15:38.905 - Hotkey register failed: Hotkey: Print Screen, Description: Capture entire screen, Job: PrintScreen
+2024-10-05 14:15:38.905 - Unable to register hotkey: Alt + Print Screen
+2024-10-05 14:15:38.905 - Hotkey register failed: Hotkey: Alt + Print Screen, Description: Capture active window, Job: ActiveWindow
+2024-10-05 14:15:38.905 - Hotkey registered: Hotkey: Shift + Print Screen, Description: Start/Stop screen recording, Job: ScreenRecorder
+2024-10-05 14:15:38.905 - Hotkey registered: Hotkey: Ctrl + Shift + Print Screen, Description: Start/Stop screen recording (GIF), Job: ScreenRecorderGIF
+2024-10-05 14:15:46.365 - HotkeyManager started.
+2024-10-05 14:15:46.366 - WatchFolderManager started.
+2024-10-05 14:15:46.377 - Startup time: 22074 ms
+2024-10-05 14:15:46.385 - CommandLine: -silent
+2024-10-05 21:49:16.478 - ShareX closing.
+2024-10-05 21:49:16.483 - ApplicationConfig save started: C:\Users\ahmed\OneDrive\المستندات\ShareX\ApplicationConfig.json
+2024-10-05 21:49:17.020 - ApplicationConfig save successful: C:\Users\ahmed\OneDrive\المستندات\ShareX\ApplicationConfig.json
+2024-10-05 21:49:17.021 - UploadersConfig save started: C:\Users\ahmed\OneDrive\المستندات\ShareX\UploadersConfig.json
+2024-10-05 21:49:17.194 - UploadersConfig save successful: C:\Users\ahmed\OneDrive\المستندات\ShareX\UploadersConfig.json
+2024-10-05 21:49:17.195 - HotkeysConfig save started: C:\Users\ahmed\OneDrive\المستندات\ShareX\HotkeysConfig.json

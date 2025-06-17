@@ -1,0 +1,401 @@
+if choice == "1":
+    print("\nYou found a hungry wolf staring at you!")
+    print("1. Try to fight it")
+    print("2. Throw some food to distract it")
+    action = input("What do you do? (1 or 2): ")
+    
+    if action == "1":
+        print("\nYou tried to fight the wolf but it was too strong!")
+        health -= 30  # تصحيح القيمة لتطابق الرسالة
+        print("Lost 30 health points!")
+    else:
+        print("\nThe wolf liked your food and left you alone!")
+        items.append("rope")
+
+elif choice == "2":
+    print("\nYou ran quickly and reached a river.")
+    print("1. Try to cross the river")
+    print("2. Look for a bridge")
+    action = input("What will you do? (1 or 2): ")
+    
+    if action == "1":
+        print("\nThe water current was too strong!")
+        health -= 20
+        print("Lost 20 health points!")
+    else:
+        print("\nYou found an old bridge and crossed safely!")
+        items.append("map")
+
+
+
+
+import random
+
+print("Welcome to the Scary Forest Game!")
+print("You are now inside a scary forest. There are many monsters, and darkness covers the place. Terrifying sounds can be heard.")
+name = input("What's your name? ")
+treasure_spot = 0
+health = 100
+exit_flag = False  # Changed from 'exit' which is a built-in function
+
+def forest_game():
+    global health  # Need to declare health as global to modify it inside function
+    
+    print("\n1. Take the shadowy trail between the twisted trees")
+    print("2. Follow the strange sound coming from the right")
+    choice = input("Choose (1-2): ")
+    
+    event = random.choice(["monster", "treasure", "friend", "nothing"])
+    
+    if choice == "1":  # Input is string by default, so compare with string
+        print("\nYou chose to take the shadowy trail between the twisted trees")
+        if event == "monster":
+            print("A fire monster appears!")
+            health -= 30
+        elif event == "treasure":  # Changed from 'if event == 1' which was wrong
+            print("You found a hidden treasure chest under the leaves!")
+            treasure_spot += 1
+        elif event == "friend":
+            print("A friendly forest spirit heals you!")
+            health += 20
+        else:
+            print("You walk safely through the dark path.")
+    
+    elif choice == "2":
+        print("\nYou follow the strange sound...")
+        # Add similar event handling for choice 2 here
+    
+    print(f"\nYour health is now: {health}")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+import random
+
+def main():
+    # تحية اللاعب وطلب الاسم
+    print("\nWelcome to the Scary Forest Game!")
+    print("You are now inside a scary forest full of monsters and darkness.\n")
+    
+    player_name = input("What's your name, brave adventurer? ")
+    print(f"\n{player_name}, your adventure begins now... Good luck!\n")
+    
+    # بدء اللعبة الرئيسية
+    start_adventure()
+
+import time
+
+def main():
+    print("\n\n=== Forest Adventure Game ===")
+    
+    # Get player name
+    player_name = input("What's your name? ")
+    print(f"\nAlright {player_name}, let's begin the adventure!")
+    
+    health = 100
+    items = []
+    
+    while health > 0:
+        print("\n---------------------------------")
+        print(f"Health: {health} | Inventory: {items if items else 'Empty'}")
+        print("---------------------------------")
+        
+        # First scene
+        print("\nYou're in a dark forest. You hear a wolf howling in the distance.")
+        print("1. Investigate the sound")
+        print("2. Run the opposite direction")
+        choice = input("What will you do? (1 or 2): ")
+        
+        if choice == "1":
+            print("\nYou found a hungry wolf staring at you!")
+            print("1. Try to fight it")
+            print("2. Throw some food to distract it")
+            action = input("What do you do? (1 or 2): ")
+            
+            if action == "1":
+                print("\nYou tried to fight the wolf but it was too strong!")
+                health -= 30
+                print("Lost 30 health points!")
+            else:
+                print("\nThe wolf liked your food and left you alone!")
+                items.append("rope")
+                
+        elif choice == "2":
+            print("\nYou ran quickly and reached a river.")
+            print("1. Try to cross the river")
+            print("2. Look for a bridge")
+            action = input("What will you do? (1 or 2): ")
+            
+            if action == "1":
+                print("\nThe water current was too strong!")
+                health -= 20
+                print("Lost 20 health points!")
+            else:
+                print("\nYou found an old bridge and crossed safely!")
+                items.append("map")
+        
+        else:
+            print("\nInvalid choice! Lost 10 health points.")
+            health -= 10
+        
+        # Check if game ended
+        if health <= 0:
+            print(f"\n{player_name} you lost all your health! Game Over")
+            break
+        
+        if "map" in items and "rope" in items:
+            print(f"\n{player_name} you found the way out of the forest! You won!")
+            break
+    
+    # Play again
+    if input("\nPlay again? (yes/no): ").lower() == "yes":
+        main()
+    else:
+        print(f"Thanks for playing {player_name}!")
+
+if __name__ == "__main__":
+    main():
+    health = 100
+    
+    while health > 0:
+        print("\n" + "="*40)
+        print(f"Your health: {health}")
+        print("Choose your path:")
+        print("1. Take the shadowy trail between twisted trees")
+        print("2. Follow the strange sound coming from right")
+        
+        choice = get_valid_input("Enter your choice (1 or 2): ", ["1", "2"])
+        
+        if choice == "1":
+            health += handle_path1()
+        else:
+            health += handle_path2()
+        
+        if health <= 0:
+            print("\nGame Over! You have been defeated by the forest...")
+            break
+
+def get_valid_input(prompt, valid_options):
+    while True:
+        user_input = input(prompt).strip()
+        if user_input in valid_options:
+            return user_input
+        print(f"Invalid input! Please enter one of: {', '.join(valid_options)}")
+
+def handle_path1():
+    event = random.choice(["monster", "treasure", "nothing"])
+    
+    if event == "monster":
+        print("\nA terrifying monster jumps out at you!")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+import time
+
+def main():
+
+    print("Welcome to the Scary Forest Game!")
+    print("You are now inside a scary forest full of monsters and darkness.")
+    
+    player_name = input("What's your name? ")
+    print("Alright {player_name}, let's begin the adventure!")
+    
+def start_adventure():
+    health = 100
+    items = []
+    
+   
+    print("\n" + "="*40)
+    print("Your health: {health}")
+    print("\nYou're in a dark forest. You hear a wolf howling in the distance.")
+    print("1. Investigate the sound")
+    print("2. Run the opposite direction")
+    choice = input("What will you do? (1 or 2): ")
+        
+    if choice == "1":
+            print("You found a hungry wolf staring at you!")
+            print("1. Try to fight it")
+            print("2. Throw some food to distract it")
+            action = input("What do you do? (1 or 2): ")
+            
+            if action == "1":
+                print("You tried to fight the wolf but it was too strong!")
+                health -= 30
+                print("Lost 30 health points!")
+            else:
+                print("The wolf liked your food and left you alone!")
+                items.append("rope")
+                
+    elif choice == "2":
+            print("You ran quickly and reached a river.")
+            print("1. Try to cross the river")
+            print("2. Look for a bridge")
+            action = input("What will you do? (1 or 2): ")
+            
+            if action == "1":
+                print("The water current was too strong!")
+                health -= 20
+                print("Lost 20 health points!")
+            else:
+                print("You found an old bridge and crossed safely!")
+                items.append("map")
+        
+    else:
+               print("Invalid choice! Lost 10 health points.")
+               health -= 10
+        
+   
+    if health <= 0:
+            print(f"\n{player_name} you lost all your health! Game Over")
+            break
+        
+    if "map" in items and "rope" in items:
+            print(f"\n{player_name} you found the way out of the forest! You won!")
+            break
+    
+    # Play again
+    if input("\nPlay again? (yes/no): ").lower() == "yes":
+        main()
+    else:
+        print(f"Thanks for playing {player_name}!")
+
+if __name__ == "__main__":
+    main()
+        return -30
+    elif event == "treasure":
+        print("\nYou found a glowing treasure chest!")
+        return 20
+    else:
+        print("\nThe path is dark and quiet...")
+        return 0
+
+def handle_path2():
+    event = random.choice(["friend", "trap", "mystery"])
+    
+    if event == "friend":
+        print("\nA friendly forest spirit guides you!")
+        return 15
+    elif event == "trap":
+        print("\nYou fell into a hidden trap!")
+        return -25
+    else:
+        print("\nYou discover an ancient artifact...")
+        return 10
+
+# بدء اللعبة
+if __name__ == "__main__":
+    main()
