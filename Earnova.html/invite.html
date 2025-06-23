@@ -1,205 +1,267 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8" />
-  <title>صفحة الدعوة</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8">
+  <title>نظام الدعوات</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
       margin: 0;
-      padding: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(-45deg, #0f2027, #203a43, #2c5364, #000000);
-      background-size: 400% 400%;
-      animation: gradientBG 15s ease infinite;
-      min-height: 100vh;
+      font-family: 'Cairo', sans-serif;
+      background-color: #121212;
       color: white;
-      box-sizing: border-box;
-      padding-bottom: 60px; /* مساحة للشريط السفلي */
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-start;
     }
-    @keyframes gradientBG {
-      0% { background-position: 0% 50%; }
-      50% { background-position: 100% 50%; }
-      100% { background-position: 0% 50%; }
-    }
+
     .container {
-      background: rgba(255, 255, 255, 0.1);
-      backdrop-filter: blur(12px);
+      padding: 20px;
+    }
+
+    .box {
+      background-color: #1e1e1e;
       padding: 20px;
       border-radius: 15px;
-      box-shadow: 0 0 25px rgba(0, 229, 255, 0.5);
-      width: 90%;
-      max-width: 400px;
-      box-sizing: border-box;
-      margin-top: 30px;
-      text-align: center;
+      margin-bottom: 20px;
+      box-shadow: 0 0 10px rgba(255, 215, 0, 0.1);
     }
-    h2 {
-      color: #00e5ff;
-      margin-bottom: 15px;
-      font-size: 5vw;
-    }
-    input {
+
+    .box input {
       width: 100%;
-      padding: 12px;
-      border-radius: 10px;
+      background: #2c2c2c;
       border: none;
-      font-size: 4vw;
-      outline: none;
-      box-sizing: border-box;
-      background-color: rgba(255, 255, 255, 0.2);
-      color: white;
-      text-align: center;
-    }
-    input::placeholder {
-      color: #ddd;
-      font-size: 3.5vw;
-    }
-    input:focus {
-      box-shadow: 0 0 8px #00e5ff;
-      background-color: rgba(255, 255, 255, 0.3);
-    }
-    button {
-      width: 100%;
-      padding: 12px;
-      margin-top: 16px;
       border-radius: 10px;
-      border: none;
-      background-color: #00e5ff;
-      color: #000;
-      font-weight: bold;
-      cursor: pointer;
-      font-size: 4vw;
-      transition: background-color 0.3s ease;
-    }
-    button:hover {
-      background-color: #00bcd4;
-    }
-    .invited-users {
-      margin-top: 20px;
-      font-size: 3.5vw;
-      max-height: 150px;
-      overflow-y: auto;
-      background: rgba(255, 255, 255, 0.1);
       padding: 10px;
-      border-radius: 10px;
-      text-align: right;
+      color: #fff;
+      font-size: 18px;
+      text-align: center;
     }
-    /* شريط التنقل السفلي */
+
+    .copy-btn {
+      margin-top: 10px;
+      width: 100%;
+      background-color: #ffcc00;
+      border: none;
+      border-radius: 10px;
+      color: black;
+      font-weight: bold;
+      padding: 10px;
+      cursor: pointer;
+    }
+
+    .level-table {
+      width: 100%;
+      background-color: #1e1e1e;
+      border-radius: 15px;
+      margin-top: 20px;
+      padding: 10px;
+      color: white;
+    }
+
+    .level-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 0;
+      border-bottom: 1px solid #333;
+    }
+
+    .level-row:last-child {
+      border-bottom: none;
+    }
+
+    .stats {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+
+    .stat-box {
+      flex: 1;
+      background-color: #1e1e1e;
+      margin: 5px;
+      border-radius: 15px;
+      padding: 20px;
+      text-align: center;
+      color: #ffcc00;
+      font-size: 18px;
+      box-shadow: 0 0 10px rgba(255, 215, 0, 0.1);
+    }
+
+    .description {
+      margin-top: 30px;
+      background-color: #1e1e1e;
+      padding: 15px;
+      border-radius: 10px;
+      font-size: 15px;
+      line-height: 1.8;
+      color: #ccc;
+    }
+
     .bottom-nav {
       position: fixed;
       bottom: 0;
       left: 0;
       width: 100%;
-      background: #1f1f1f;
+      background-color: #1e1e1e;
       display: flex;
       justify-content: space-around;
-      padding: 12px 0;
-      box-shadow: 0 -2px 10px rgba(0,0,0,0.5);
-      z-index: 1000;
+      padding: 10px 0;
+      border-top: 1px solid #333;
     }
-    .bottom-nav button {
-      background: none;
-      border: none;
-      color: #00e5ff;
-      font-weight: bold;
-      font-size: 18px;
-      cursor: pointer;
-      transition: color 0.3s ease;
-    }
-    .bottom-nav button:hover {
-      color: #00bcd4;
-    }
-    @media (min-width: 600px) {
-      h2 { font-size: 28px; }
-      input, button { font-size: 16px; }
-      .invited-users { font-size: 14px; }
+
+    .bottom-nav div {
+      color: #aaa;
+      text-align: center;
+      font-size: 14px;
     }
   </style>
 </head>
 <body>
+
   <div class="container">
-    <h2>رابط دعوتك الخاص</h2>
-    <input type="text" id="inviteLink" readonly placeholder="يتم تحميل الرابط..." />
-    <div class="invited-users" id="invitedUsers">
-      <strong>الأشخاص الذين سجلوا عبر دعوتك:</strong>
-      <ul id="invitedList"></ul>
+    <div class="box">
+      <h3>رمز الدعوة</h3>
+      <input type="text" id="inviteCode" value="..." readonly>
+      <button class="copy-btn" onclick="copyCode()">نسخ</button>
+    </div>
+
+    <div class="box">
+      <h3>رابط الدعوة</h3>
+      <input type="text" id="inviteLink" value="..." readonly>
+      <button class="copy-btn" onclick="copyLink()">نسخ</button>
+    </div>
+
+    <div class="level-table">
+      <div class="level-row">
+        <span>العمولة</span>
+        <span>الأشخاص</span>
+        <span>المكافأة</span>
+      </div>
+      <div class="level-row">
+        <span>35%</span>
+        <span id="lvl1Count">-</span>
+        <span id="lvl1Reward">EGP -</span>
+      </div>
+      <div class="level-row">
+        <span>3%</span>
+        <span id="lvl2Count">-</span>
+        <span id="lvl2Reward">EGP -</span>
+      </div>
+      <div class="level-row">
+        <span>2%</span>
+        <span id="lvl3Count">-</span>
+        <span id="lvl3Reward">EGP -</span>
+      </div>
+    </div>
+
+    <div class="stats">
+      <div class="stat-box" id="totalPeople">إجمالي الأشخاص<br>-</div>
+      <div class="stat-box" id="totalRewards">إجمالي المكافآت<br>EGP -</div>
+    </div>
+
+    <div class="description">
+      <p>عندما يقوم صديقك بالتسجيل والاستثمار، ستحصل على الفور على مكافأة بنسبة 35% من مبلغ استخدامه.</p>
+      <p>عندما يستدعي أعضاء فريقك شخص في المستوى 2، ستحصل على مكافأة بنسبة 3%.</p>
+      <p>عندما يستدعي أعضاء فريقك شخص في المستوى 3، ستحصل على مكافأة بنسبة 2%.</p>
+      <p>بمجرد أن يستثمر عضو في فريقك، سيتم إضافة المكافأة تلقائيًا إلى رصيدك ويمكنك سحبها على الفور.</p>
     </div>
   </div>
 
-  <!-- شريط التنقل السفلي -->
   <div class="bottom-nav">
-    <button onclick="navigateTo('profit.html')">💰 الرصيد</button>
-    <button onclick="navigateTo('page.html')">🏠 الرئيسية</button>
+    <div>الرئيسية</div>
+    <div>المنتجات</div>
+    <div>الفرق</div>
+    <div>حسابي</div>
   </div>
 
-  <!-- استدعاء مكتبات Firebase بطريقة UMD -->
-  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js"></script>
+  <!-- Firebase ربط ب -->
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
+    import { getFirestore, doc, getDoc } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
+    import { getAuth, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js";
 
-  <script>
-    // إعدادات Firebase
-    const firebaseConfig = {
+       const firebaseConfig = {
       apiKey: "AIzaSyCmv3HQkT0PFg_66im4vSbna4oQu29dTkc",
       authDomain: "earnovalogin.firebaseapp.com",
+      databaseURL: "https://earnovalogin-default-rtdb.firebaseio.com",
       projectId: "earnovalogin",
-      storageBucket: "earnovalogin.firebasestorage.app",
+      storageBucket: "earnovalogin.appspot.com",
       messagingSenderId: "488267724180",
-      appId: "1:488267724180:web:b2a3376a94735bca6e8b81",
-      measurementId: "G-G550NREEB5"
+      appId: "1:488267724180:web:b2a3376a94735bca6e8b81"
     };
 
-    // تهيئة التطبيق
-    firebase.initializeApp(firebaseConfig);
-    const auth = firebase.auth();
-    const db = firebase.firestore();
 
-    // عند تغير حالة تسجيل الدخول
-    auth.onAuthStateChanged(user => {
+    const app = initializeApp(firebaseConfig);
+    const db = getFirestore(app);
+    const auth = getAuth(app);
+
+    const codeInput = document.getElementById("inviteCode");
+    const linkInput = document.getElementById("inviteLink");
+
+    const lvl1Count = document.getElementById("lvl1Count");
+    const lvl2Count = document.getElementById("lvl2Count");
+    const lvl3Count = document.getElementById("lvl3Count");
+
+    const lvl1Reward = document.getElementById("lvl1Reward");
+    const lvl2Reward = document.getElementById("lvl2Reward");
+    const lvl3Reward = document.getElementById("lvl3Reward");
+
+    const totalPeople = document.getElementById("totalPeople");
+    const totalRewards = document.getElementById("totalRewards");
+
+    onAuthStateChanged(auth, async (user) => {
       if (user) {
-        const uid = user.uid;
-        const inviteLink = `${window.location.origin}${window.location.pathname}?invitedBy=${encodeURIComponent(uid)}`;
-        document.getElementById('inviteLink').value = inviteLink;
+        const userDoc = doc(db, "users", user.email);
+        const snap = await getDoc(userDoc);
+        if (snap.exists()) {
+          const data = snap.data();
+          const code = data.inviteCode || "غير متاح";
+          codeInput.value = code;
+          linkInput.value = `https://yourdomain.com/reg?ic=${code}`;
 
-        loadInvitedUsers(uid);
+          const c1 = data.level1Count || 0;
+          const c2 = data.level2Count || 0;
+          const c3 = data.level3Count || 0;
+
+          const r1 = data.level1Reward || 0;
+          const r2 = data.level2Reward || 0;
+          const r3 = data.level3Reward || 0;
+
+          lvl1Count.textContent = c1;
+          lvl2Count.textContent = c2;
+          lvl3Count.textContent = c3;
+
+          lvl1Reward.textContent = `EGP ${r1}`;
+          lvl2Reward.textContent = `EGP ${r2}`;
+          lvl3Reward.textContent = `EGP ${r3}`;
+
+          totalPeople.innerHTML = `إجمالي الأشخاص<br>${c1 + c2 + c3}`;
+          totalRewards.innerHTML = `إجمالي المكافآت<br>EGP ${r1 + r2 + r3}`;
+        }
       } else {
-        // تسجيل دخول مجهول تلقائي
-        auth.signInAnonymously()
-          .catch(error => {
-            alert("خطأ في تسجيل الدخول المجهول: " + error.message);
-          });
+        codeInput.value = "سجّل دخولك أولًا";
+        linkInput.value = "";
       }
     });
 
-    // تحميل قائمة المدعوين
-    function loadInvitedUsers(inviterUid) {
-      db.collection('invites')
-        .where('invitedBy', '==', inviterUid)
-        .orderBy('timestamp', 'desc')
-        .onSnapshot(snapshot => {
-          const list = document.getElementById('invitedList');
-          list.innerHTML = '';
-          snapshot.forEach(doc => {
-            const data = doc.data();
-            const li = document.createElement('li');
-            li.textContent = data.invitedEmail || 'بريد غير معروف';
-            list.appendChild(li);
-          });
-        });
+    function copyCode() {
+      const code = document.getElementById("inviteCode");
+      code.select();
+      document.execCommand("copy");
+      alert("تم نسخ كود الدعوة!");
     }
 
-    // التنقل بين الصفحات
-    function navigateTo(page) {
-      window.location.href = page;
+    function copyLink() {
+      const link = document.getElementById("inviteLink");
+      link.select();
+      document.execCommand("copy");
+      alert("تم نسخ رابط الدعوة!");
     }
   </script>
+
 </body>
 </html>
+
+
+
 
 
 

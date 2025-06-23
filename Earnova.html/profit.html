@@ -122,12 +122,39 @@
       font-weight: bold;
     }
 
-    /* الشريط السفلي المعدل */
+    .transaction .date {
+      font-size: 12px;
+      color: #ccc;
+    }
+
+    .alert {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      padding: 15px;
+      background-color: #4CAF50;
+      color: white;
+      border-radius: 5px;
+      z-index: 1001;
+      display: none;
+      animation: slideIn 0.5s, fadeOut 0.5s 2.5s;
+    }
+
+    @keyframes slideIn {
+      from {right: -300px; opacity: 0;}
+      to {right: 20px; opacity: 1;}
+    }
+
+    @keyframes fadeOut {
+      from {opacity: 1;}
+      to {opacity: 0;}
+    }
+
     .bottom-nav {
       display: flex;
       justify-content: space-around;
-      background: linear-gradient(to right, #00e5ff, #00ffc8, #00e5ff);
-      border-top: 2px solid #00ffc8;
+      background: linear-gradient(to right, #ff00e5, #00ffcc, #00e5ff);
+      border-top: 2px solid #00ffcc;
       padding: 10px 0;
       position: sticky;
       bottom: 0;
@@ -186,7 +213,7 @@
   <div class="container">
     <div class="balance-box">
       <h2>رصيدك الحالي</h2>
-      <p>EGP 0</p>
+      <p>EGP <span id="userBalance">... جاري التحميل</span></p>
     </div>
 
     <div class="buttons">
@@ -196,25 +223,29 @@
 
     <div class="transactions">
       <h3>آخر العمليات</h3>
-
-      <div class="transaction">
-        <span class="type">إيداع</span>
-        <span class="amount">لا يوجد</span>
-        <span class="date"></span>
-      </div>
-
-      <div class="transaction">
-        <span class="type">سحب</span>
-        <span class="amount">لا يوجد</span>
-        <span class="date"></span>
-      </div>
-
-      <div class="transaction">
-        <span class="type">مكافأة</span>
-        <span class="amount">قريبًا</span>
-        <span class="date"></span>
+      <div id="transactionsList">
+        <div class="transaction">
+          <span class="type">إيداع</span>
+          <span class="amount">لا يوجد</span>
+          <span class="date"></span>
+        </div>
+        <div class="transaction">
+          <span class="type">سحب</span>
+          <span class="amount">لا يوجد</span>
+          <span class="date"></span>
+        </div>
+        <div class="transaction">
+          <span class="type">مكافأة</span>
+          <span class="amount">لا يوجد</span>
+          <span class="date"></span>
+        </div>
       </div>
     </div>
+  </div>
+
+  <!-- إشعار المكافأة الترحيبية -->
+  <div id="welcomeBonusAlert" class="alert">
+    تمت إضافة مكافأة ترحيبية بقيمة 80 ج.م
   </div>
 
   <div class="bottom-nav">
@@ -222,9 +253,9 @@
       <i class="fas fa-home"></i>
       الرئيسية
     </a>
-    <a href="#" class="nav-item">
+    <a href="money.html" class="nav-item">
       <i class="fas fa-coins"></i>
-      استسمر المال
+      المنتجات
     </a>
     <a href="page.html" class="nav-item">
       <i class="fas fa-tasks"></i>
@@ -244,8 +275,99 @@
     </a>
   </div>
 
+  <!-- Firebase سكربت -->
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
+    import { getAuth, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js";
+    import { getFirestore, doc, onSnapshot, updateDoc, setDoc } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyCmv3HQkT0PFg_66im4vSbna4oQu29dTkc",
+      authDomain: "earnovalogin.firebaseapp.com",
+      projectId: "earnovalogin",
+      storageBucket: "earnovalogin.appspot.com",
+      messagingSenderId: "488267724180",
+      appId: "1:488267724180:web:b2a3376a94735bca6e8b81"
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth(app);
+    const db = getFirestore(app);
+
+    const balanceSpan = document.getElementById("userBalance");
+    const welcomeBonusAlert = document.getElementById("welcomeBonusAlert");
+
+    onAuthStateChanged(auth, async (user) => {
+      if (user) {
+        console.log("User signed in:", user.uid);
+        const userRef = doc(db, "users", user.uid);
+
+        // فحص حالة المستخدم
+        onSnapshot(userRef, async (docSnap) => {
+          try {
+            if (!docSnap.exists()) {
+              console.log("No user document found, creating new one...");
+              // مستخدم جديد: إنشاء مستند مع المكافأة
+              await setDoc(userRef, {
+                balance: 80,
+                welcomeBonusClaimed: true,
+                email: user.email || "",
+                createdAt: new Date().toISOString(),
+                inviteCode: generateInviteCode(),
+                invites: 0,
+                products: 0
+              });
+              console.log("New user document created with welcome bonus.");
+              showWelcomeBonusAlert();
+              balanceSpan.textContent = "80 ج.م";
+            } else {
+              const data = docSnap.data();
+              console.log("User document data:", data);
+              // فحص إذا كان المستخدم لسه ما خدش المكافأة
+              if (!data.welcomeBonusClaimed || data.balance === 0) {
+                console.log("Adding welcome bonus to existing user...");
+                await updateDoc(userRef, {
+                  balance: 80,
+                  welcomeBonusClaimed: true
+                });
+                console.log("Welcome bonus added to existing user.");
+                showWelcomeBonusAlert();
+                balanceSpan.textContent = "80 ج.م";
+              } else {
+                // عرض الرصيد الحالي
+                balanceSpan.textContent = (data.balance || 0) + " ج.م";
+              }
+            }
+          } catch (error) {
+            console.error("Error processing user document:", error);
+            balanceSpan.textContent = "خطأ في جلب الرصيد";
+          }
+        }, (error) => {
+          console.error("Error in onSnapshot:", error);
+          balanceSpan.textContent = "خطأ في جلب البيانات";
+        });
+      } else {
+        console.log("No user signed in.");
+        balanceSpan.textContent = "تسجيل الدخول مطلوب";
+      }
+    });
+
+    // دالة لعرض إشعار المكافأة
+    function showWelcomeBonusAlert() {
+      welcomeBonusAlert.style.display = "block";
+      setTimeout(() => {
+        welcomeBonusAlert.style.display = "none";
+      }, 3000);
+    }
+
+    // دالة لتوليد رمز دعوة
+    function generateInviteCode() {
+      return Math.floor(100000 + Math.random() * 900000).toString();
+    }
+  </script>
 </body>
 </html>
+
 
 
 
